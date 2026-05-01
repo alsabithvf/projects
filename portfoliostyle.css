@@ -144,7 +144,7 @@ html{
     transform: scale(1);
   }
 }
-.footer{
+.footer {
   background: #f9fafb;
   margin: 40px auto;
   border-radius: 20px;
@@ -152,13 +152,35 @@ html{
   max-width: 900px;
   box-shadow: 0 10px 25px rgba(0,0,0,0.08);
 }
+
 .footer ul {
   list-style: square;
-  padding: 0;
+  padding-left: 20px;
+  margin: 0;
 }
 
 .footer li {
   margin-bottom: 10px;
+  word-break: break-word;
+}
+
+.footer a {
+  word-break: break-all;
+}
+
+@media (max-width: 600px) {
+  .footer {
+    padding: 20px;
+    margin: 20px 10px;
+  }
+
+  .footer ul {
+    padding-left: 16px;
+  }
+
+  .footer li {
+    font-size: 14px;
+  }
 }
 
 /*Form Styling*/
