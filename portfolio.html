@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="portfoliostyle.css">
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init({
+            publicKey: "qShJWfBOkMsNW1lnt",
+        });
+        })();
+    </script>
+</head>
+<body>
+
+    <div class="nav-bar">
+        <a href="#home" class="nav-card">
+        <span class="navname">ALSABITH V F</span>
+        </a>
+        <div class="hamburger" id="hamburger">&#9776;</div>
+        <div class="nav-links" id="navLinks">
+         <a href="#home" class="nav-card">
+          <span>Home</span>
+        </a>
+        <a href="#about" class="nav-card">
+          <span>About</span>
+        </a>
+          <a href="#Skills" class="nav-card">
+          <span>Skills</span>
+        </a>
+        <a href="#projects" class="nav-card">
+          <span>Projects</span>
+        </a>
+        <a href="#contact" class="nav-card">
+          <span>Contacts</span>
+        </a>
+        </div>
+      </div>
+      <section id="home">
+    <div id="photo">
+        <img src="profile.jpeg" id="img">
+    </div>
+    <div class="name">
+      <span class="wave">Hi</span>&nbsp;I'm ALSABITH
+    </div>
+    <p class="tagline">
+        BCA (Honors) Graduate&nbsp;|&nbsp; Web Developer&nbsp;|&nbsp; Continuous Learner<br/>
+        Focused on building clean, scalable, and user-centric web applications<br class="br-desktop" />
+        with a commitment to continuous improvement and modern development practices
+    </p>
+    </section>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Web Developer with a strong foundation in front-end technologies and a focus on building responsive, user-centric web applications. Proficient in CSS for modern, adaptive layouts, JavaScript for dynamic functionality, and ReactJS for developing efficient, component-based interfaces. Demonstrated ability to translate design concepts into functional, high-performance websites while ensuring usability, accessibility, and cross-browser compatibility. Committed to writing clean, maintainable code and following best practices in UI/UX design. Continuously engaged in learning and professional development to stay aligned with emerging technologies and industry standards. Seeking opportunities to contribute to real-world projects, collaborate within development teams, and deliver impactful digital solutions.</p>
+    </section>
+      <section id="Skills">
+        <h2>Skills</h2>
+        <ol>
+            <li>Front-End Development</li>
+            <div class="skills-container">
+                <div class="skills">
+                    <p>HTML</p>
+                    <img src="https://static.vecteezy.com/system/resources/previews/012/697/299/non_2x/stylized-3d-html-logo-design-free-png.png">
+                </div>
+                <div class="skills">
+                    <p>CSS</p>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCbZF9xNA72Eos1PqJ8TDmHROUqL6OawkQHA&s">
+                </div>
+                <div class="skills">
+                    <p>JavaScript</p>
+                    <img src="https://static.vecteezy.com/system/resources/previews/012/697/298/non_2x/3d-javascript-logo-design-free-png.png">
+                </div>
+                <div class="skills">
+                    <p>ReactJS</p>
+                    <img src="https://cdn3d.iconscout.com/3d/free/thumb/free-react-native-logo-3d-icon-png-download-4642743.png">
+                </div>
+            </div><br>
+            <li>Tools & Technologies</li>
+            <ul>
+                <li>Git & GitHuB</li>
+                  <li>VS Code</li>
+                <li>Figma</li>
+                <li>Browser Developer Tools</li><br>
+            </ul>
+            <li>Soft Skills</li>
+            <ul>
+                 <li>Problem Solving</li>
+                  <li>Team Collaboration</li>
+                <li>Continuous Learning</li>
+                <li>Adaptability</li>
+                 <li>Critical Thinking</li>
+                  <li>Attention To Detail</li>
+                <li>Communication</li><br>
+            </ul>
+        </ol>
+      </section>
+      <section id="projects">
+        <h2>Projects</h2>
+        <div id="project1">
+            <h3>Portfolio Website</h3>
+            <p>A responsive portfolio website built to highlight my work, skills, and experience. It includes sections like Home, About,Skills, Projects, and Contact with easy navigation</p>
+        </div>
+        <div id="project2">
+            <h3>To-Do App</h3>
+            <p>To-Do App is a simple and interactive web application built using HTML, CSS, and JavaScript. It allows users to add, manage, and delete daily tasks easily. The app provides a user-friendly interface where tasks can be marked as completed, helping users stay organized and productive. This project demonstrates my understanding of DOM manipulation, event handling, and basic front-end development concept</p>
+        </div>
+        <div id="project3">
+            <h3>Product Filter</h3>
+            <p>This project is a Product Filter web application built using HTML, CSS, and JavaScript. It allows users to view a list of products and filter them based on categories such as price, type, or name.</p>
+        </div>
+      </section>
+      <section id="contact">
+        <h2>Contact</h2>
+        <form onsubmit="sendMail(event)">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" required>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+            </div>
+
+            <button type="submit">Send</button>
+        </form>
+        <div class="footer">
+            <ul>
+                <li>Address:&nbsp;valiyaparambil(H),Elookkara,Muppathadam P.O,Aluva,Ernakulam,Kerala</li>
+                <li>Email:&nbsp;<a href="mailto:alsabithvf@gmail.com">  alsabithvf@gmail.com</a></li>
+                <li>Phone:&nbsp;<a href="+91 9074524063">  +91 9074524063</a></li>
+                <li>LinkedIN:&nbsp;<a href="https://www.linkedin.com/in/alsabithvf2005"> ALSABITH V F</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <script>
+        const hamburger = document.getElementById("hamburger");
+        const navLinks = document.getElementById("navLinks");
+
+        hamburger.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+        });
+    </script>
+<script src="mail.js"></script>
+</body>
+</html>
